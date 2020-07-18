@@ -16,7 +16,7 @@
       Weatherize
     </h1>
 
-    <form class="search" action="" method="get">
+    <div class="search">
       <div class="search-txt">
         <input
           class="search-box"
@@ -29,20 +29,20 @@
       <button class="search-btn" type="submit">
         <i class="fas fa-search"></i>
       </button>
-    </form>
+    </div>
 
     <div class="temp">
       <p class="low">
         Low <br />
-        23°C
+        <span id="low-temp">23</span>°C
       </p>
       <p class="curr">
         Current <br />
-        25°C
+        <span id="curr-temp">25</span>°C
       </p>
       <p class="high">
         High <br />
-        45°C
+        <span id="high-temp">45</span>°C
       </p>
     </div>
 
@@ -64,7 +64,7 @@
         <p>
           Humidity
           <br />
-          <span>63%</span>
+          <span id="humid">63</span>%
         </p>
         <i class="fas fa-tint"></i>
       </div>
@@ -72,7 +72,7 @@
         <p>
           Feels like
           <br />
-          <span>41°C</span>
+          <span id="feel">41</span>°C
         </p>
         <i class="fas fa-thermometer-half"></i>
       </div>
@@ -80,7 +80,7 @@
         <p>
           Pressure
           <br />
-          <span>1000 mb</span>
+          <span id="pressure">1000</span>
         </p>
         <i class="fas fa-tachometer-alt"></i>
       </div>
@@ -88,7 +88,7 @@
         <p>
           Cloud Count
           <br />
-          <span> 2</span>
+          <span id="cloud"> 2</span>
         </p>
         <i class="fas fa-cloud"></i>
       </div>
@@ -98,5 +98,7 @@
       src="https://kit.fontawesome.com/16b5f49769.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

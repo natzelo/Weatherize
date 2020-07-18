@@ -139,7 +139,7 @@
 
 .card i {
     grid-area: ico;
-    margin: auto 0;
+    margin: auto auto;
     font-size: 3rem;
    
 }
