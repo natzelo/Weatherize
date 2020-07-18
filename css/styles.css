@@ -48,11 +48,9 @@
     border-style: none;
     width: 60px;
     outline: none;
-}
-
-.search-btn:hover {
     box-shadow: 0 5px 5px gray;
 }
+
 
 
 /* TEMPERATURE */
@@ -128,6 +126,7 @@
     width: 200px;
     height: 142px;
     margin: 20px;
+    box-shadow: 0 5px 5px grey;
 }
 
 .card p {
