@@ -4,22 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playground</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=IBM+Plex+Mono&family=Nunito:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/weather-icons.min.css" />
   </head>
   <body>
+    <h1 class="brand">
+      Weatherize
+    </h1>
 
-        <h1 class="brand">
-            Weatherize
-        </h1>
-    
-      <form class="search" action="" method="get">
-          <div class="search-txt">
-            <input class="search-box" type="text" placeholder="Enter the place" name="query" />
-          </div>
-       
-        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
-      </form>
+    <form class="search" action="" method="get">
+      <div class="search-txt">
+        <input
+          class="search-box"
+          type="text"
+          placeholder="Enter the place"
+          name="query"
+        />
+      </div>
+
+      <button class="search-btn" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+
+    <div class="temp">
+      <p class="low">
+        Low <br />
+        23°C
+      </p>
+      <p class="curr">
+        Current <br />
+        25°C
+      </p>
+      <p class="high">
+        High <br />
+        45°C
+      </p>
+    </div>
+
+    <div class="graphic">
+      <i class="wi wi-night-sleet"></i>
+      <p class="description">
+        <span class="summary">Clear Sky</span>
+        <br />
+        <span class="wind">
+          Wind speed: <span id="wind-speed">1.47</span>m/sec
+          <br />
+          Wind Direction: <span id="wind-direc"> 350</span>°
+        </span>
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <p>
+          Humidity
+          <br />
+          <span>63%</span>
+        </p>
+        <i class="fas fa-tint"></i>
+      </div>
+      <div class="card">
+        <p>
+          Feels like
+          <br />
+          <span>41°C</span>
+        </p>
+        <i class="fas fa-thermometer-half"></i>
+      </div>
+      <div class="card">
+        <p>
+          Pressure
+          <br />
+          <span>1000 mb</span>
+        </p>
+        <i class="fas fa-tachometer-alt"></i>
+      </div>
+      <div class="card">
+        <p>
+          Cloud Count
+          <br />
+          <span> 2</span>
+        </p>
+        <i class="fas fa-cloud"></i>
+      </div>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/16b5f49769.js"
       crossorigin="anonymous"

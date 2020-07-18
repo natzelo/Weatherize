@@ -1,0 +1,156 @@
+
+/* BRAND */
+.brand {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    color: #2b50ed;
+    font-size: 3rem;
+}
+
+
+/* SEARCH */
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-txt {
+    border-radius: 40px;
+    border-color: #a9a9b0;
+    border-style: solid;
+    border-width: 0.1px;
+    padding: 5px 20px;
+    width: 50%;
+    margin-right: 2%;
+}
+
+.search-txt:hover {
+    box-shadow: 0 5px 5px gray;
+    border-style: none;
+}
+
+.search-box {
+    border-style: none;
+    line-height: 3rem;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.search-btn {
+    padding: 4px;
+    border-radius: 100%;
+    background-color: #2b50ed ;
+    color: white;
+    border-style: none;
+    width: 60px;
+    outline: none;
+}
+
+.search-btn:hover {
+    box-shadow: 0 5px 5px gray;
+}
+
+
+/* TEMPERATURE */
+
+.temp {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.temp p{
+    margin: 0 2%;
+    line-height: 60px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.low, .high {
+    font-size: 1.5rem;
+    color: lightskyblue;
+}
+
+.curr {
+    font-size: 2rem;
+    color: #2b50ed;
+}
+
+/* IMAGES AND DESCRIPTION */
+
+.graphic {
+    display: flex;
+    justify-content: center;
+}
+
+.graphic p {
+    color: gray;
+    margin-left: 5%;
+    text-align: left;
+   
+}
+
+.wi {
+    color: #2b50ed;
+    font-size: 6rem;
+}
+
+.summary {
+    color: #2b50ed;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.wind {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+}
+
+.card {
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title ico"
+    ;
+    min-width: 100px;
+    color: white;
+    background-color: #2b50ed;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0 1%;
+    width: 200px;
+    height: 142px;
+    margin: 20px;
+}
+
+.card p {
+    grid-area: title;
+    margin: auto 0;
+    text-align: left;
+}
+
+
+.card i {
+    grid-area: ico;
+    margin: auto 0;
+    font-size: 3rem;
+   
+}
+
+.card span {
+    font-size: 2rem;
+}
+
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
