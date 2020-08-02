@@ -1,4 +1,4 @@
-
+@import "anim.css";
 /* BRAND */
 .brand {
     text-align: center;
@@ -51,6 +51,9 @@
     box-shadow: 0 5px 5px gray;
 }
 
+.search-btn:hover {
+    cursor: pointer;
+}
 
 
 /* TEMPERATURE */
@@ -74,6 +77,13 @@
     color: lightskyblue;
 }
 
+.low {
+    animation: slide-right 1s both;
+}
+
+.high {
+    animation: slide-left 1s both;
+}
 .curr {
     font-size: 2rem;
     color: #2b50ed;
@@ -127,6 +137,7 @@
     height: 142px;
     margin: 20px;
     box-shadow: 0 5px 5px grey;
+    animation: slide-up 1s both;
 }
 
 .card p {
